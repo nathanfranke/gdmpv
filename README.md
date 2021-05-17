@@ -11,7 +11,8 @@
 
 ---
 
-**Basic Usage**:
+### Basic Usage:
+
 ```py
 # This example shows the position and duration of the current song on a label.
 extends Label
@@ -87,3 +88,15 @@ func _on_event(event: MpvEvent) -> void:
 	print("Event: %s -> %s" % [event.get_event_name(), event.get_data()])
 
 ```
+
+---
+
+### Installation:
+
+**_gdmpv_** installs like any other module.
+
+* Clone the [Godot Repository](https://github.com/godotengine/godot/)
+* Clone [This Repository](https://github.com/nathanfranke/gdmpv/) inside the (godot) `modules/` directory. The file structure should appear as `godot/modules/gdmpv/SCSub`
+* [Compile Godot](https://docs.godotengine.org/en/stable/development/compiling/index.html) for [Windows](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_windows.html), [Linux](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_x11.html), or [OSX](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_osx.html). Make sure to download all dependencies for your operating system.
+* Run the generated binary in the (godot) `bin/` directory.
+* (Optional) Build the export templates for [Windows](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_windows.html#creating-windows-export-templates), [Linux](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_x11.html#building-export-templates), and/or [OSX](https://docs.godotengine.org/en/latest/development/compiling/compiling_for_osx.html#building-export-templates)
