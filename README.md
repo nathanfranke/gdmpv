@@ -93,12 +93,13 @@ func _on_event(event: MpvEvent) -> void:
 
 ### Installation:
 
-**_gdmpv_** installs like any other module.
+The installation of **_gdmpv_** is similar to that of other Godot modules.
 
 * **(Important)** install `libmpv-dev`.
   * On Ubuntu/Debian based distros, do this with `sudo apt install libmpv-dev`.
 * Clone the [Godot Repository](https://github.com/godotengine/godot/)
-* Clone [This Repository](https://github.com/nathanfranke/gdmpv/) inside the (godot) `modules/` directory. The file structure should appear as `godot/modules/gdmpv/SCSub`
+* Clone [This Repository](https://github.com/nathanfranke/gdmpv/) inside the (godot) `modules/` directory. Make sure to clone submodules using `--recurse-submodules`. The file structure should appear as `godot/modules/gdmpv/SCSub`
+* Run the `setup.sh` script to build libmpv. Optionally, specify threads using `-jX`, where X is two times your CPU core count.
 * [Compile Godot](https://docs.godotengine.org/en/stable/development/compiling/index.html) for [Windows](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_windows.html), [Linux](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_x11.html), or [OSX](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_osx.html). Make sure to download all dependencies for your operating system.
 * Run the generated binary in the (godot) `bin/` directory.
 * (Optional) Build the export templates for [Windows](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_windows.html#creating-windows-export-templates), [Linux](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_x11.html#building-export-templates), and/or [OSX](https://docs.godotengine.org/en/latest/development/compiling/compiling_for_osx.html#building-export-templates)
