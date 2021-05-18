@@ -95,7 +95,7 @@ func _on_event(event: MpvEvent) -> void:
 
 **_gdmpv_** installs like any other module.
 
-* **(Important)** install `libmpv-dev`. This requirement shouldn't be needed soon.
+* **(Important)** install `libmpv-dev`.
   * On Ubuntu/Debian based distros, do this with `sudo apt install libmpv-dev`.
 * Clone the [Godot Repository](https://github.com/godotengine/godot/)
 * Clone [This Repository](https://github.com/nathanfranke/gdmpv/) inside the (godot) `modules/` directory. The file structure should appear as `godot/modules/gdmpv/SCSub`

@@ -145,9 +145,9 @@ void Mpv::poll() {
 				}
 				data = arr;
 			} break;
-			case MPV_EVENT_START_FILE: {
+			// TODO: These should be defined after v1.108
+			/*case MPV_EVENT_START_FILE: {
 				mpv_event_start_file *e = (mpv_event_start_file *)event->data;
-				// TODO: Remove this, since e should be defined after v1.108
 				if (e != nullptr) {
 					data = Variant(e->playlist_entry_id);
 				}
@@ -161,7 +161,7 @@ void Mpv::poll() {
 				dict["insert_id"] = Variant(e->playlist_insert_id);
 				dict["insert_count"] = Variant(e->playlist_insert_num_entries);
 				data = dict;
-			} break;
+			} break;*/
 			case MPV_EVENT_HOOK: {
 				mpv_event_hook *e = (mpv_event_hook *)event->data;
 				Dictionary dict;
