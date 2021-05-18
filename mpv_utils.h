@@ -1,7 +1,7 @@
 #pragma once
 
 #include "core/object.h"
-#include <client.h>
+#include <mpv/client.h>
 
 mpv_format get_format(const Variant::Type &p_type);
 Variant::Type get_type(const mpv_format &p_type);

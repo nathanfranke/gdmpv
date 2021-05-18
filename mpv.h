@@ -1,7 +1,7 @@
 #pragma once
 
 #include "core/object.h"
-#include <client.h>
+#include <mpv/client.h>
 
 class Mpv : public Object {
 	GDCLASS(Mpv, Object)
