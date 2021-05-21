@@ -2,7 +2,9 @@
 
 cd "$(dirname "$0")/mpv-build"
 
-echo "--enable-libmpv-static" > mpv_options
+echo "--enable-static" > ffmpeg_options
+echo "--disable-gl
+--enable-libmpv-static" > mpv_options
 
 CFLAGS="-fPIC" ./rebuild $@
 rm *_options
