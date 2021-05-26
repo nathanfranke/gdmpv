@@ -95,10 +95,10 @@ func _on_event(event: MpvEvent) -> void:
 
 The installation of **_gdmpv_** is similar to that of other Godot modules.
 
+* Install `libmpv`. This will not be required in a future release.
+  * On Ubuntu/Debian based distributions, `libmpv` can be installed with `sudo apt install libmpv-dev`
 * Clone the [Godot Repository](https://github.com/godotengine/godot/) and checkout the `3.x` branch (`git checkout 3.x`).
 * Clone [This Repository](https://github.com/nathanfranke/gdmpv/) inside the (godot) `modules/` directory. Make sure to clone submodules using `--recurse-submodules`. The file structure should appear as `godot/modules/gdmpv/SCSub`.
-* Run the `setup.sh` script to build libmpv. Optionally, specify threads using `-jX`, where X is two times your CPU core count.
-  * Example: `./setup.sh -j8`.
 * [Compile Godot](https://docs.godotengine.org/en/stable/development/compiling/index.html) for [Windows](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_windows.html), [Linux](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_x11.html), or [OSX](https://docs.godotengine.org/en/stable/development/compiling/compiling_for_osx.html). Make sure to download all dependencies for your operating system.
   * For Linux, this is `scons p=x11 -j8`.
 * Run the generated binary in the (godot) `bin/` directory.

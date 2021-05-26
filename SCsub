@@ -4,8 +4,6 @@ Import("env")
 Import("env_modules")
 
 env_gdmpv = env_modules.Clone()
-
 env_gdmpv.add_source_files(env.modules_sources, "*.cpp")
 
-env.Append(LIBPATH=["#modules/gdmpv/mpv-build/mpv/build"])
 env.Append(LIBS=["mpv"])
