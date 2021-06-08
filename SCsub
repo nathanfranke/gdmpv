@@ -4,6 +4,15 @@ Import("env")
 Import("env_modules")
 
 env_gdmpv = env_modules.Clone()
-env_gdmpv.add_source_files(env.modules_sources, "*.cpp")
 
-env.Append(LIBS=["mpv"])
+#env_gdmpv.Append(CPPPATH=["#modules/gdmpv/mpv-build/ffmpeg/libswscale"])
+#env_gdmpv.Append(CPPPATH=["#modules/gdmpv/mpv-build/mpv"])
+
+env.Append(LIBPATH=["#modules/gdmpv/mpv-build/build_libs/lib"])
+env.Append(LIBPATH=["#modules/gdmpv/mpv-build/mpv/build"])
+env.Append(LIBS=["ass", "avcodec", "avdevice", "avfilter", "avformat", "avutil", "postproc", "swresample", "swscale", "mpv"])
+
+#env.Append(LIBPATH=["#modules/gdmpv/mpv-build/mpv/build"])
+#env.Append(LIBS=["mpv"])
+
+env_gdmpv.add_source_files(env.modules_sources, "*.cpp")
