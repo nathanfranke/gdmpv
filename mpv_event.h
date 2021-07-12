@@ -1,7 +1,7 @@
 #pragma once
 
 #include "core/reference.h"
-#include <mpv/client.h>
+#include "mpv-build/mpv/libmpv/client.h"
 
 class MpvEvent : public Reference {
 	GDCLASS(MpvEvent, Reference)
