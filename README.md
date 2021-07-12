@@ -1,3 +1,7 @@
+# Important: This repository is archived because of depdencency issues. I would recommend using [gdaudioext](https://github.com/nathanfranke/gdaudioext) instead.
+
+---
+
 # _gdmpv_ - MPV player bindings for Godot 3.x
 
 ---
